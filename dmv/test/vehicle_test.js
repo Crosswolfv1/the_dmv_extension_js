@@ -8,7 +8,7 @@ const camaro_param = {vin: '1a2b3c4d5e6f', year: 1969, make: 'Chevrolet', model:
 
 describe('Vehicle', function() {
 
-  it.skip('should be able to create a car with a VIN, year, make, model, and engine type', function() {
+  it('should be able to create a car with a VIN, year, make, model, and engine type', function() {
     var cruz = createVehicle(cruz_param);
 
     assert.equal(cruz.vin, '123456789abcdefgh');
@@ -18,7 +18,7 @@ describe('Vehicle', function() {
     assert.equal(cruz.engine, "ice");
   });
   
-  it.skip('should be able to create a different car', function() {
+  it('should be able to create a different car', function() {
     var cruz = createVehicle(cruz_param);
     var bolt = createVehicle(bolt_param);
 
@@ -29,7 +29,7 @@ describe('Vehicle', function() {
     assert.equal(bolt.engine, "ev");
   });
 
-  it.skip('be able to determine if the vehilce is an antique', function() {
+  it('be able to determine if the vehicle is an antique', function() {
     var cruz = createVehicle(cruz_param);
     var bolt = createVehicle(bolt_param);
     var camaro = createVehicle(camaro_param);
@@ -39,7 +39,7 @@ describe('Vehicle', function() {
     assert.equal(isAntique(camaro), true)    
   })
 
-  it.skip('be able to determine if the vehicle is electric', function() {
+  it('be able to determine if the vehicle is electric', function() {
     var cruz = createVehicle(cruz_param);
     var bolt = createVehicle(bolt_param);
     var camaro = createVehicle(camaro_param);
